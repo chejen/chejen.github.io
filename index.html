@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      #vp {
+        height: 100px;
+        width: 206px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="vp"></div>
+    <div id="info"></div>
+    <script>
+//screen.width = 412, document.documentElement.clientWidth = 980, window.innerWidth = 980
+      document.addEventListener('DOMContentLoaded', () => {
+        const text = 'screen.width = ' +
+          screen.width + ', ' +
+          'window.outerWidth = ' +
+          window.outerWidth + ', ' +
+          'document.documentElement.clientWidth = ' +
+          document.documentElement.clientWidth + ', ' +
+          'window.innerWidth = ' +
+          window.innerWidth;
+        info.innerText = text;
+      });
+      document.addEventListener('pointerup', () => {
+        const text = 'screen.width = ' +
+          screen.width + ', ' +
+          'window.outerWidth = ' +
+          window.outerWidth + ', ' +
+          'document.documentElement.clientWidth = ' +
+          document.documentElement.clientWidth + ', ' +
+          'window.innerWidth = ' +
+          window.innerWidth;
+        info.innerText = text;
+      });
+    </script>
+  </body>
+</html>
